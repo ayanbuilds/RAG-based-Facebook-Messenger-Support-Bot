@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="wrap narrow">
+    <h1>Admin Login</h1>
+
+    <div class="card">
+      <label>Email</label>
+      <input id="email" type="email" placeholder="admin@example.com" />
+
+      <label>Password</label>
+      <input id="password" type="password" placeholder="••••••••" />
+
+      <button id="btnLogin">Login</button>
+      <p id="msg" class="muted"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

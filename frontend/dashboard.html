@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Dashboard</title>
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <link rel="stylesheet" href="css/main.css" />
+  
+</head>
+<body>
+  <div class="topbar">
+    <div>
+      <b>Support Dashboard</b>
+      <span id="badge" class="badge">Needs Human: 0</span>
+    </div>
+    <button id="btnLogout" class="btn-secondary">Logout</button>
+  </div>
+
+  <div class="wrap wide">
+    <div class="grid2">
+      <div class="card">
+        <div class="row">
+          <select id="filter">
+            <option value="ALL">All</option>
+            <option value="NEEDS_HUMAN">Needs Human</option>
+            <option value="BOT_ACTIVE">Bot Active</option>
+            <option value="RESOLVED">Resolved</option>
+          </select>
+          <button id="btnRefresh" class="btn-secondary">Refresh</button>
+        </div>
+
+        <div id="conversations" class="list"></div>
+      </div>
+
+      <div class="card">
+        <!-- <div class="row">
+          <input id="convId" placeholder="Conversation ID" />
+          <button id="btnOpen" class="btn-secondary">Open</button>
+        </div> -->
+
+        <div class="row">
+          <button id="btnNeedHuman" class="btn-secondary">Set NEEDS_HUMAN</button>
+          <button id="btnBotActive" class="btn-secondary">Set BOT_ACTIVE</button>
+          <button id="btnResolved" class="btn-secondary">Set RESOLVED</button>
+        </div>
+
+        <div id="chat" class="chat"></div>
+
+        <div class="row">
+          <input id="reply" placeholder="Type reply..." />
+          <button id="btnSend">Send</button>
+        </div>
+
+        <small id="rtStatus" class="muted"></small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Supabase JS (for realtime messages + conversation status updates) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- <script src="config.js"></script>
+  <script src="dashboard.js"></script> -->
+  <script src="js/config.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
