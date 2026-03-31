@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+python-dotenv
+sqlalchemy
+psycopg2-binary
+pydantic
+requests
+groq
+
+sentence-transformers 
+pypdf
+python-docx 
+tqdm
+
+python-jose[cryptography]
+requests
